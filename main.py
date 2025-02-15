@@ -37,9 +37,9 @@ def createModel(input_dim):
 
     model = nn.Sequential(
         nn.Linear(input_dim, 64), # 1 скрытый слой
-        nn.ReLU(),                 #
+        nn.ReLU(),
         nn.Linear(64, 32), # 2 скрытый слой
-        nn.ReLU(),                 #
+        nn.ReLU(),
         nn.Linear(32, 1) # выходной слой
     )
     return model
